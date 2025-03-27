@@ -2,7 +2,7 @@
 Portfolio creado con HTML, CSS, etc.. para el programa Momentum
 
 ## Autor - 👩🏻‍🔬⚛️💻
-***Claudia Balderas***
+**Claudia Balderas**
 
 ## 📫 Cómo contactarme
 📍 Actualmente en: **Madrid, España**
