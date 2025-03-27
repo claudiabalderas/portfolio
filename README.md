@@ -11,7 +11,7 @@ Portfolio creado con HTML, CSS, etc.. para el programa Momentum
 - 📌 Más sobre mí en mi [portafolio web](https://claudiabalderas.github.io)
 
 ## Ver ejemplo en vivo
-- [ENLACEGITHUBPAGES](ENLACEGITHUBPAGES)
+- [https://claudiabalderas.github.io/mi-portfolio/]([ENLACEGITHUBPAGES](https://claudiabalderas.github.io/mi-portfolio/))
 
 ## Instalación
 Este proyecto no necesita instalación. Simplemente abre la carpeta o haz doble click en el .html
