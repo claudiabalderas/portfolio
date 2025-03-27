@@ -1,7 +1,7 @@
 ### Descripción
-Portfolio creado con HTML, CSS, etc..
+Portfolio creado con HTML, CSS, etc.. para el programa Momentum
 
-## Autor👩🏻‍🔬⚛️💻
+## Autor - 👩🏻‍🔬⚛️💻
 ***Claudia Balderas***
 
 ## 📫 Cómo contactarme
