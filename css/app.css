@@ -37,7 +37,7 @@ a {
   display: block;
   text-decoration: none;
   color: inherit;
-  cursor: none;
+  
 }
 video {
   max-width: 100%;
@@ -85,7 +85,7 @@ body {
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  cursor: none;
+  
 }
 
 .circulos{
@@ -148,7 +148,7 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  display: none;
+  display: flex;
 }
 .header .ul{
   display: flex;
@@ -349,5 +349,7 @@ body {
 #cursor.mini{
   transform: scale(0.7);
 }
+
+
 
 
