@@ -1,110 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Claudia Balderas | Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/font/style.css">
-    <link rel="stylesheet" href="css/app.css">
-    <script defer src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
-    <script defer src="js/app.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Claudia Balderas | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;800&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://kit.fontawesome.com/a2e8b6e52e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-    <div id="cursor"></div>
-
-    <div class="circulos">
-        <!-- SVGs decorativos del fondo -->
-        <!-- ... (se mantienen igual) ... -->
+  <aside>
+    <div>
+      <img src="assets/claudia.jpg" alt="Claudia Balderas" />
+      <h2>Dr. Claudia Balderas</h2>
     </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#papers">Papers</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#blog">Blog</a></li>
+      </ul>
+    </nav>
+    <div class="socials">
+      <a href="mailto:claudia@example.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/claudiabalderas"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/claudiabalderas"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </aside>
 
-    <header class="header" style="display: flex;">
-        <h1 class="h1"><a href="#inicio" title="Claudia Balderas" class="a">Claudia BalderasAAAAA</a></h1>
-        <nav class="nav">
-            <ul class="ul">
-                <li class="li"><a href="#inicio" title="Inicio" class="a">Inicio</a></li>
-                <li class="li"><a href="#works" title="Proyectos" class="a">Proyectos</a></li>
-                <li class="li"><a href="#about" title="Sobre mí" class="a">Sobre mí</a></li>
-            </ul>
-        </nav>
+  <main>
+    <header id="home">
+      <div class="text">
+        <h1>Welcome! I'm <span>Claudia Balderas</span></h1>
+        <p>Dr. at CSIC (Momentum Program)<br>
+        Specialized in metabolomics and data science applied to essential oil authentication.</p>
+        <div class="links">
+          <a href="mailto:claudia@example.com"><i class="fas fa-envelope"></i></a>
+          <a href="https://github.com/claudiabalderas"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/claudiabalderas"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <img src="assets/claudia.jpg" alt="Claudia Balderas" style="width: 150px; border-radius: 50%" />
     </header>
 
-    <main class="main">
-
-        <div class="seccion" id="inicio">
-            <section class="section info">
-                <h2 class="h2">Claudia Balderas</h2>
-                <h3 class="h3">Investigadora en Metabolómica y Ciencia de Datos</h3>
-
-                <ul class="ul">
-                    <li class="li">
-                        <a href="https://github.com/claudiabalderas" class="a" title="Github" target="_blank">Visitar mi Github</a>
-                    </li>
-                    <li class="li">
-                        <a href="https://linkedin.com/in/claudiabalderas" class="a" title="LinkedIn" target="_blank">Visitar mi LinkedIn</a>
-                    </li>
-                </ul>
-            </section>
+    <section class="section" id="research">
+      <h2>Research Areas</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Metabolomics</h3>
+          <p>Specialized analysis of complex mass spectrometry data in nutritional studies.</p>
         </div>
+        <div class="card">
+          <h3>AI for Essential Oils</h3>
+          <p>Machine learning models to detect adulteration in essential oils using GC-MS data.</p>
+        </div>
+      </div>
+    </section>
 
-        <section class="seccion works" id="works">
-            <h2 class="h2">Proyectos</h2>
-            <p class="p">Algunos de los proyectos en los que he trabajado, aplicando ciencia de datos, metabolómica y aprendizaje automático.</p>
-
-            <div class="grid">
-                <article class="article">
-                    <a class="a" href="#" title="Proyecto 1">
-                        <figure class="figure">
-                            <img src="assets/proyecto1.jpg" alt="Imagen Proyecto 1" class="img" loading="lazy">
-                        </figure>
-                        <h4 class="h4">Detección de fraudes en aceites esenciales</h4>
-                    </a>
-                </article>
-                <article class="article">
-                    <a class="a" href="#" title="Proyecto 2">
-                        <figure class="figure">
-                            <img src="assets/proyecto2.jpg" alt="Imagen Proyecto 2" class="img" loading="lazy">
-                        </figure>
-                        <h4 class="h4">Análisis metabolómico en estudios de nutrición</h4>
-                    </a>
-                </article>
-            </div>
-        </section>
-
-        <section class="seccion about" id="about">
-            <h2 class="h2">Sobre mí</h2>
-            <p class="p">
-                Soy investigadora especializada en análisis metabolómico aplicado a nutrición, con experiencia en datos complejos provenientes de espectrometría de masas. Actualmente desarrollo modelos de inteligencia artificial para la detección de fraudes en aceites esenciales en el programa Momentum del CSIC.
-            </p>
-            <p class="p">
-                Me apasiona aplicar la ciencia a problemas reales, trabajar en entornos interdisciplinarios y colaborar con equipos diversos a nivel internacional.
-            </p>
-            <p class="p">
-                📍 Actualmente en: Madrid, España
-            </p>
-
-            <ul class="rrss">
-                <li class="li">
-                    <a href="https://github.com/claudiabalderas" class="a" title="GitHub" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/github-icon.svg" class="svg" alt="GitHub">
-                    </a>
-                </li>
-                <li class="li">
-                    <a href="https://linkedin.com/in/claudiabalderas" class="a" title="LinkedIn" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/linkedin-icon.svg" class="svg" alt="LinkedIn">
-                    </a>
-                </li>
-            </ul>
-        </section>
-
-    </main>
-
-    <footer class="footer">
-        <span class="span">Hecho con 💙 por Claudia Balderas</span>
-    </footer>
-
+    <section class="section" id="papers">
+      <h2>Recent Publications</h2>
+      <div class="publication">
+        <h4>Authentication of Lavender Oil using GC-MS and Machine Learning</h4>
+        <p>Journal of Metabolomics Applications • 2024</p>
+      </div>
+      <div class="publication">
+        <h4>Untargeted metabolomics for nutritional biomarkers</h4>
+        <p>Nutrition & Health Journal • 2023</p>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
