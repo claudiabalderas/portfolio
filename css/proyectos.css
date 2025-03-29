@@ -1,0 +1,137 @@
+
+/* =======================================================
+   🎯 PROYECTO
+======================================================= */
+
+
+
+.proyecto-detalle {
+    margin-top: 60px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+  }
+  
+  .proyecto-detalle .h3 {
+    color: #6c63ff;
+    margin-bottom: 16px;
+  }
+  
+  
+  
+  .nav-subsecciones {
+    margin: 20px 0 30px;
+  }
+  
+  .ul-sub {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .a-sub {
+    background-color: #6c63ff;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .a-sub:hover {
+    background-color: #554ce0;
+  }
+  
+  .subseccion {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-left: 4px solid #6c63ff;
+    border-radius: 10px;
+  }
+  
+  .subseccion h4 {
+    color: #6c63ff;
+    margin-bottom: 10px;
+  }
+  
+  
+  
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 30px 0 20px;
+    gap: 10px;
+  }
+  
+  .tab {
+    background-color: #eee;
+    color: #444;
+    padding: 10px 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 0.95em;
+  }
+  
+  .tab:hover,
+  .tab.active {
+    background-color: #6c63ff;
+    color: #fff;
+  }
+  
+  .tab-content {
+    display: none;
+    background-color: #f8f8f8;
+    border-left: 4px solid #6c63ff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+  
+  .resultados-proyecto {
+    margin-top: 40px;
+  }
+  
+  .grid-resultados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .bloque-resultado {
+    text-align: center;
+    width: 180px;
+  }
+  
+  .bloque-resultado img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .bloque-resultado img:hover {
+    transform: scale(1.05);
+  }
+  
+  .p-mini {
+    margin-top: 10px;
+    font-size: 0.95em;
+    color: #444;
+  }

@@ -3,37 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Claudia Balderas | Portfolio</title>
+    <title>Claudia Balderas | Portafolio</title>
+
+    <!-- Fuentes desde Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/font/style.css">
+
+    <!-- Hojas de estilo personalizadas -->
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/cv.css">
+    <link rel="stylesheet" href="css/competencias.css">
+    <link rel="stylesheet" href="css/habilidades.css">
+    <link rel="stylesheet" href="css/proyectos.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+
+
+    <!-- Scripts -->
     <script defer src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
     <script defer src="js/app.js"></script>
+
 </head>
 <body>
 
-    <div id="cursor"></div>
+ 
 
-    <div class="circulos">
-        <!-- SVGs decorativos del fondo -->
-        <!-- ... (se mantienen igual) ... -->
-    </div>
+    <!-- Encabezado con menú de navegación sticky -->
+    <header class="header">
+        <h1 class="h1">
+            <a href="#inicio" title="Claudia Balderas" class="a">Claudia Balderas</a>
+        </h1>
 
-    <header class="header" style="display: flex;">
-        <h1 class="h1"><a href="#inicio" title="Claudia Balderas" class="a">Claudia BalderasAAAAA</a></h1>
         <nav class="nav">
             <ul class="ul">
-                <li class="li"><a href="#inicio" title="Inicio" class="a">Inicio</a></li>
-                <li class="li"><a href="#sobre-mi" title="Sobre mí" class="a">Sobre mí</a></li>
-                <li class="li"><a href="#formacion" title="Trayectoria profesional" class="a">Trayectoria profesional</a></li>
-                <li class="li"><a href="#competencias" title="Competencias" class="a">Competencias</a></li>
-                <li class="li"><a href="#habilidades" title="habilidades" class="a">Habilidades personales y profesionales</a></li>
-                <li class="li"><a href="#proyectos" title="Proyectos" class="a">Proyectos</a></li>
+                <li class="li"><a href="#inicio" class="a">Inicio</a></li>
+                <li class="li"><a href="#sobre-mi" class="a">Sobre mí</a></li>
+                <li class="li"><a href="#formacion" class="a">Trayectoria</a></li>
+                <li class="li"><a href="#competencias" class="a">Competencias</a></li>
+                <li class="li"><a href="#habilidades" class="a">Habilidades</a></li>
+                <li class="li"><a href="#proyectos" class="a">Proyectos</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- Contenido principal (secciones) -->
+    <main>
+        <!-- Aquí van tus secciones como #inicio, #sobre-mi, etc. -->
 
     <main class="main">
         <div class="seccion" id="inicio" style="background-color: #f5f5f5; position: relative;">
@@ -81,6 +100,7 @@
               </div>
             </section>
           </div>
+
         <section class="seccion about" id="about">
             <h2 class="h2">Sobre mí</h2>
             <p class="p">
@@ -110,13 +130,13 @@
 
 
         <section class="seccion formacion" id="formacion">
-            <h2 class="h2">Trayectoria profesional</h2>
+            <h2 class="h2">Trayectoria</h2>
           
             <!-- Línea de tiempo: EXPERIENCIA LABORAL -->
             <h3 class="h3">Experiencia laboral</h3>
             <div class="timeline-alt">
           
-              <div class="timeline-container left animate">
+              <div class="timeline-container left ">
                 <div class="timeline-content-alt">
                   <img src="images/logos/iqog.png" alt="Logo IQOG-CSIC" class="logo-uni">
                   <h4 class="h4">Doctor FC2 - Programa Momentum (IQOG-CSIC)</h4>
@@ -125,7 +145,7 @@
                 </div>
               </div>
           
-              <div class="timeline-container right animate">
+              <div class="timeline-container right ">
                 <div class="timeline-content-alt">
                   <img src="images/logos/ictan.png" alt="Logo ICTAN-CSIC" class="logo-uni">
                   <h4 class="h4">ICTAN-CSIC</h4>
@@ -136,7 +156,7 @@
                 </div>
               </div>
           
-              <div class="timeline-container left animate">
+              <div class="timeline-container left ">
                 <div class="timeline-content-alt">
                   <img src="images/logos/lund.png" alt="Logo Universidad de Lund" class="logo-uni">
                   <h4 class="h4">Investigadora Postdoctoral</h4>
@@ -145,7 +165,7 @@
                 </div>
               </div>
           
-              <div class="timeline-container right animate">
+              <div class="timeline-container right ">
                 <div class="timeline-content-alt">
                   <img src="images/logos/ufsc.png" alt="Logo UFSC" class="logo-uni">
                   <h4 class="h4">Investigadora Postdoctoral</h4>
@@ -159,42 +179,38 @@
             <h3 class="h3" style="margin-top: 4rem;">Formación académica</h3>
             <div class="timeline-alt">
           
-              <div class="timeline-container right animate">
+              <div class="timeline-container left ">
                 <div class="timeline-content-alt">
                   <img src="images/logos/viu.png" alt="Logo VIU" class="logo-uni">
                   <h4 class="h4">M.Sc. en Bioinformática</h4>
+                  <span class="timeline-date">2023 - 2024</span>
                   <p class="p">Universitat Internacional Valenciana (VIU)</p>
                 </div>
               </div>
           
-              <div class="timeline-container left animate">
+              <div class="timeline-container right ">
                 <div class="timeline-content-alt">
                   <img src="images/logos/the-bridge.png" alt="Logo The Bridge" class="logo-uni">
                   <h4 class="h4">Bootcamp en Data Science</h4>
+                  <span class="timeline-date"> Abril 2022 - Agosto 2022</span>
                   <p class="p">The Bridge | Digital Talent Accelerator</p>
                 </div>
               </div>
           
-              <div class="timeline-container right animate">
+              <div class="timeline-container left ">
                 <div class="timeline-content-alt">
                   <img src="images/logos/cembio.png" alt="Logo CEU" class="logo-uni">
                   <h4 class="h4">Doctorado en Biología y Patología Perinatales</h4>
-                  <p class="p">Universidad San Pablo CEU - Centro de Metabolómica y Bioanálisis (CEMBIO)</p>
-                </div>
-              </div>
-          
-              <div class="timeline-container left animate">
-                <div class="timeline-content-alt">
-                  <img src="images/logos/cembio.png" alt="Logo CEU" class="logo-uni">
                   <h4 class="h4">DEA en Estadística e Investigación Operativa</h4>
+                  <span class="timeline-date">2009 - 2014</span>
                   <p class="p">Universidad San Pablo CEU - Centro de Metabolómica y Bioanálisis (CEMBIO)</p>
                 </div>
               </div>
-          
-              <div class="timeline-container right animate">
+              <div class="timeline-container right ">
                 <div class="timeline-content-alt">
                   <img src="images/logos/unam.png" alt="Logo UNAM" class="logo-uni">
                   <h4 class="h4">Licenciatura Química Farmacéutica Bióloga</h4>
+                  <span class="timeline-date">2004 - 2009</span>
                   <p class="p">Universidad Nacional Autónoma de México</p>
                 </div>
               </div>
@@ -218,7 +234,7 @@
         <div class="competencias-grid-horizontal" style="display: flex; justify-content: space-between; gap: 30px; flex-wrap: nowrap; margin-top: 40px;">
       
           <!-- Metabolómica & Ciencias Ómicas -->
-          <div class="bloque-competencia animate">
+          <div class="bloque-competencia ">
             <h3 class="h3">🧪 Técnologías ómicas</h3>
             <div class="contenido-lateral">
               <div class="imagen-lateral">
@@ -241,7 +257,7 @@
           </div>
       
           <!-- Ciencia de Datos & Bioinformática -->
-          <div class="bloque-competencia animate">
+          <div class="bloque-competencia ">
             <h3 class="h3">💻 Digitales</h3>
             <div class="contenido-lateral">
               <div class="imagen-lateral">
@@ -266,7 +282,8 @@
 
       </section>
       <section class="seccion habilidades" id="habilidades">
-        <h2 class="h2">Habilidades Personales y Profesionales</h2>
+        <h2 class="h2">Habilidades</h2>
+        <h3 class="h3">Personales y Profesionales</h3>
         <div class="habilidades-circulares">
           <img src="images/competencias/habilidades_cien.png" alt="Infografía científica" class="imagen-central">
       

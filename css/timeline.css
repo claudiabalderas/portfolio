@@ -1,0 +1,152 @@
+
+/* =======================================================
+   🎯 TIME LINE
+======================================================= */
+
+
+.timeline-alt {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+  
+  .timeline-alt::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #6c63ff;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0; /* Asegura que la línea esté detrás del contenido */
+  }
+  
+  .timeline-container {
+    padding: 20px 30px;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+  }
+  
+  .timeline-container.left {
+    left: 0;
+  }
+  
+  .timeline-container.right {
+    left: 50%;
+  }
+  
+  .timeline-content-alt {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1; /* Asegura que el contenido esté por encima de la línea */
+    overflow: visible; /* Previene que algo se esconda */
+  }
+  
+  .timeline-container.left .timeline-content-alt {
+    margin-left: auto;
+  }
+  
+  .timeline-container.right .timeline-content-alt {
+    margin-right: auto;
+  }
+  
+  .timeline-container::before {
+    content: '';
+    position: absolute;
+    top: 22px;
+    width: 20px;
+    height: 20px;
+    background-color: #6c63ff;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  
+  .timeline-container.left::before {
+    right: -10px;
+  }
+  
+  .timeline-container.right::before {
+    left: -10px;
+  }
+  
+  .logo-uni {
+    display: block;
+    margin: 0 auto 15px auto;
+    max-width: 80px;
+    max-height: 80px;
+    object-fit: contain;
+    filter: grayscale(0.1);
+  }
+  
+  .timeline-date {
+    display: block;
+    font-weight: 500;
+    color: #6c63ff;
+    margin: 6px 0;
+  }
+  
+  /* Estilo claro y visible para los h4 */
+  .h4 {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-align: center;
+    color: #6c63ff;
+    line-height: 1.4;
+  }
+  
+  .animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+  }
+  
+  .animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .timeline-container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+    .timeline-container.right {
+      left: 0;
+    }
+  
+    .timeline-alt::after {
+      left: 30px;
+    }
+  
+    .timeline-container::before {
+      left: 15px;
+    }
+  
+    .timeline-container.left .timeline-content-alt,
+    .timeline-container.right .timeline-content-alt {
+      margin: 0;
+    }
+  }
+  
+  
+  /* Flecha al final del timeline */
+  .timeline-arrow {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid #6c63ff;
+    margin: 30px auto 10px;
+  }
+  

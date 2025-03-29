@@ -1,0 +1,56 @@
+
+/* =======================================================
+   🎯 HABILIDADES INFOGRAFIA
+======================================================= */
+
+
+
+.habilidades-infografia {
+    max-width: 1000px;
+    margin: 40px auto;
+    text-align: center;
+  }
+  
+  
+  .habilidades-circulares {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    height: 500px; /* o ajusta según el tamaño que desees */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .imagen-central {
+    width: 300px;
+    border-radius: 10px;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .globo {
+    position: absolute;
+    background-color: #f0f8ff;
+    padding: 0.8rem 1rem;
+    border-radius: 20px;
+    max-width: 200px;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 2;
+  }
+  
+  /* Posiciones circulares */
+  .globo1 { top: 15%; left: 50%; transform: translate(-50%, -50%); }
+  .globo2 { top: 30%; left: 80%; transform: translate(-50%, -50%); }
+  .globo3 { top: 70%; left: 80%; transform: translate(-50%, -50%); }
+  .globo4 { top: 85%; left: 50%; transform: translate(-50%, -50%); }
+  .globo5 { top: 70%; left: 20%; transform: translate(-50%, -50%); }
+  .globo6 { top: 30%; left: 20%; transform: translate(-50%, -50%); }
+  
+  
+  
