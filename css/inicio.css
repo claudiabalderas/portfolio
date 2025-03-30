@@ -1,0 +1,83 @@
+#seccion_inicio {
+    background-color: #f5f5f5; position: relative;
+}
+
+/* Fondo lavanda */
+.fondo {
+    background-color: #e3e3ea;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  
+  /* Contenedor principal */
+  .section.info {
+    padding: 100px 40px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Contenido alineado en flex */
+  .contenedor-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  /* Imagen hero */
+  .hero-img img {
+    width: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Texto */
+  .bloque-texto {
+    max-width: 500px;
+  }
+  
+  #seccion_inicio h2 {
+    font-size: 3em;
+    margin: 0;
+    color: #333;
+  }
+  
+  #seccion_inicio h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  #seccion_inicio p {
+    margin-top: 12px;
+    color: #555;
+    font-size: 1rem;
+  }
+  
+  /* Redes sociales */
+  .redes-sociales {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+  }
+  
+  .redes-sociales li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  .redes-sociales img {
+    height: 40px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  

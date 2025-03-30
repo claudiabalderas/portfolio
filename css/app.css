@@ -1,6 +1,7 @@
 /* =======================================================
-   🎨 CSS general de la web
+   🎨 CSS GENERAL DE LA WEB
 ======================================================= */
+
 :root {
   --blanco: #e0e0e0;
   --blanco-2: rgba(255, 255, 255, 0.2);
@@ -37,9 +38,8 @@ body {
   background-color: var(--negro);
   color: var(--blanco);
   min-height: 100vh;
-  font-smooth: always;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;  
 }
 
 img,
@@ -52,24 +52,46 @@ video {
   object-position: center;
 }
 
-a {
-  text-decoration: none;
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--tipo-titular);
   color: inherit;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
 }
 
-li {
-  list-style: none;
+h1 {
+  font-size: 4em;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: inherit;
-  font-weight: inherit;
-  font-size: inherit;
+h2 {
+  font-size: 5em;
+  line-height: 1em;
+  color: #B3B3B3;
+  margin: 0 0 2rem;
+}
+
+h3 {
+  font-size: 2.5em;
+  color: #6c63ff;
+  margin: 1em 0;
+}
+
+h4 {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #6c63ff;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+p {
+  font-size: 1em;
+  text-align: justify;
+  margin-bottom: 1.5em;
+  line-height: 1.6em;
 }
 
 form,
@@ -84,53 +106,9 @@ button {
   display: block;
 }
 
-
-
 /* =======================================================
-   📌 SECCIONES GENERALES
+   📌 Enlaces y listas
 ======================================================= */
-section {
-  width: 100%;
-  min-height: 80vh;
-  padding: 2em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 2;
-}
-
-h2 {
-  font-family: var(--tipo-titular);
-  font-size: 3em;
-  font-weight: 600;
-  color: var(--blanco);
-  text-align: center;
-}
-
-h3 {
-  font-family: var(--tipo-titular);
-  font-size: 2em;
-  color: #6c63ff;
-  text-align: center;
-  margin: 1em 0;
-}
-
-h4 {
-  font-size: 1.2em;
-  font-weight: 700;
-  text-align: center;
-  color: #6c63ff;
-  margin-bottom: 12px;
-  line-height: 1.4;
-}
-
-p {
-  font-size: 1.1em;
-  text-align: justify;
-  margin-bottom: 1.5em;
-}
 
 ul {
   display: flex;
@@ -140,12 +118,15 @@ ul {
 }
 
 li {
+  list-style: none;
   margin: 0 1em;
 }
 
 a {
   display: inline-block;
   padding: 1em;
+  text-decoration: none;
+  color: inherit;
   font-weight: 600;
   text-transform: uppercase;
   transition: 0.5s ease;
@@ -153,15 +134,29 @@ a {
 
 a:hover {
   border-color: var(--blanco);
+  text-decoration: underline;
 }
 
 
+
+
+/* =======================================================
+   SECCIONES
+======================================================= */
+
 section {
-    margin-top: 30px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+  width: 100%;
+  min-height: 80vh;
+  padding: 2em;
+  background-color: #FEFEFE;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  padding-top: 4em;
 }
 
 
@@ -169,6 +164,7 @@ section {
 /* =======================================================
    🖼️ GRIDS
 ======================================================= */
+
 .grid {
   width: 90%;
   max-width: 40em;
@@ -178,13 +174,10 @@ section {
   gap: 1em;
 }
 
-
-
-
-
 /* =======================================================
    🎯 PERSONALIZACIONES EXTRA (cursor, blobs, etc.)
 ======================================================= */
+
 #cursor {
   width: 5em;
   height: 5em;

@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/inicio.css">
+  <link rel="stylesheet" href="css/sobremi.css">
   <link rel="stylesheet" href="css/timeline.css">
   <link rel="stylesheet" href="css/cv.css">
   <link rel="stylesheet" href="css/competencias.css">
@@ -35,23 +36,16 @@
 
 
 <body>
-
-
-
   <!-- Encabezado con menú de navegación sticky -->
   <header>
-    <h1>      
-      <img src="images/iconos/matraz.png" alt="Inicio">
-    </h1>
-
     <nav>
       <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#formacion">Trayectoria</a></li>
-        <li><a href="#competencias">Competencias</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#seccion_inicio">Inicio</a></li>
+        <li><a href="#seccion_sobremi">Sobre mí</a></li>
+        <li><a href="#seccion_trayectoria">Trayectoria</a></li>
+        <li><a href="#seccion_competencias">Competencias</a></li>
+        <li><a href="#seccion_habilidades">Habilidades</a></li>
+        <li><a href="#seccion_proyectos">Proyectos</a></li>
       </ul>
     </nav>
   </header>
@@ -59,51 +53,43 @@
   <!-- Contenido principal (secciones) -->
   <main>
 
-    <section id="inicio" style="background-color: #f5f5f5; position: relative;">
-      <!-- Fondo superior gris lavanda a pantalla completa -->
-      <div
-        style="background-color: #e3e3ea; height: 500px; width: 100%; position: absolute; top: 0; left: 0; z-index: 0;">
-      </div>
-
-      <div class="section info" style="padding: 100px 40px; position: relative; z-index: 1;">
-        <div
-          style="display: flex; align-items: center; justify-content: center; gap: 60px; flex-wrap: wrap; max-width: 1100px; margin: 0 auto;">
-
+    <section id="seccion_inicio">
+      <!-- Fondo superior gris lavanda -->
+      <div class="fondo"></div>
+  
+      <div class="section info">
+        <div class="contenedor-info">
+          
           <!-- Imagen tipo hero -->
-          <div>
-            <img src="images/claudia.jpg" alt="Foto de Claudia Balderas"
-              style="width: 220px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+          <div class="hero-img">
+            <img src="images/claudia.jpg" alt="Foto de Claudia Balderas">
           </div>
-
+  
           <!-- Bloque de texto y redes -->
-          <div style="max-width: 500px;">
-            <h2 style="font-size: 2.2rem; font-weight: 700; margin: 0;">Claudia Balderas</h2>
-            <h3 style="font-size: 1.3rem; font-weight: 400; color: #333; margin-top: 10px;">
-              Investigadora en Metabolómica & Ciencia de Datos
-            </h3>
-            <p style="margin-top: 12px; color: #555; font-size: 1rem;">
-              Mis proyectos están a solo un scroll de distancia.
-            </p>
-
-            <!-- Redes sociales alineadas a la izquierda -->
-            <ul style="list-style: none; padding: 0; margin-top: 25px;">
-              <li style="display: inline-block; margin-right: 15px;">
+          <div class="bloque-texto">
+            <h2>Claudia Balderas</h2>
+            <h3>Investigadora en Metabolómica & Ciencia de Datos</h3>
+    
+            <!-- Redes sociales -->
+            <ul class="redes-sociales">
+              <li>
                 <a href="https://github.com/claudiabalderas" target="_blank">
-                  <img src="images/github.png" alt="GitHub" style="width: 40px;">
+                  <img src="images/github.png" alt="GitHub">
                 </a>
               </li>
-              <li style="display: inline-block; margin-right: 15px;">
+              <li>
                 <a href="https://www.linkedin.com/in/phdclaudiabalderas/" target="_blank">
-                  <img src="images/linkedin.jpg" alt="LinkedIn" style="width: 40px; border-radius: 6px;">
+                  <img src="images/linkedin.png" alt="LinkedIn">
                 </a>
               </li>
-              <li style="display: inline-block;">
+              <li>
                 <a href="https://orcid.org/0000-0002-8524-0219" target="_blank">
-                  <img src="images/orcid.png" alt="Orcid" style="width: 40px;">
+                  <img src="images/orcid.png" alt="Orcid">
                 </a>
               </li>
             </ul>
           </div>
+  
         </div>
       </div>
     </section>
@@ -156,22 +142,18 @@
         <div class="timeline-container left ">
           <div class="timeline-content-alt">
             <img src="images/logos/iqog.png" alt="Logo IQOG-CSIC" class="logo-uni">
-            <h4>Doctor FC2 - Programa Momentum (IQOG-CSIC)</h4>
-            <span class="timeline-date">Actualmente</span>
-            <p>Instituto de Química Orgánica General, Madrid</p>
+            <h4>Doctor FC2 - Programa Momentum </h4>
+            <span class="timeline-date">2024 - Actualmente</span>
+            <p>Instituto de Química Orgánica General (IQOG-CSIC), Madrid</p>
           </div>
         </div>
 
         <div class="timeline-container right ">
           <div class="timeline-content-alt">
             <img src="images/logos/ictan.png" alt="Logo ICTAN-CSIC" class="logo-uni">
-            <h4>ICTAN-CSIC</h4>
+            <h4>Investigadora Metabolómica/Analista Datos</h4>
             <span class="timeline-date">2017 - 2020 | 2022 - 2024</span>
-            <p><span class="negrita">Periodo I</span> Titulado Superior - Proyecto determinado en el area de
-              metabolómica</p>
-            <p><span class="negrita">Periodo II</span> Analista de datos en la Unidad de Servicio de Técnicas Analíticas
-              (USTA)</p>
-            <p>Instituto de Ciencia y Tecnología de Alimentos y Nutrición, Madrid</p>
+            <p>Instituto de Ciencia y Tecnología de Alimentos y Nutrición (ICTAN-CSIC), Madrid</p>
           </div>
         </div>
 
@@ -220,12 +202,23 @@
           <div class="timeline-content-alt">
             <img src="images/logos/cembio.png" alt="Logo CEU" class="logo-uni">
             <h4>Doctorado en Biología y Patología Perinatales</h4>
-            <h4>DEA en Estadística e Investigación Operativa</h4>
             <span class="timeline-date">2009 - 2014</span>
             <p>Universidad San Pablo CEU - Centro de Metabolómica y Bioanálisis (CEMBIO)</p>
           </div>
         </div>
+
+
         <div class="timeline-container right ">
+          <div class="timeline-content-alt">
+            <img src="images/logos/cembio.png" alt="Logo CEU" class="logo-uni">
+            <h4>DEA en Estadística e Investigación Operativa</h4>
+            <span class="timeline-date">2009 - 2010</span>
+            <p>Universidad San Pablo CEU - Centro de Metabolómica y Bioanálisis (CEMBIO)</p>
+          </div>
+        </div>
+
+
+        <div class="timeline-container left ">
           <div class="timeline-content-alt">
             <img src="images/logos/unam.png" alt="Logo UNAM" class="logo-uni">
             <h4>Licenciatura Química Farmacéutica Bióloga</h4>
