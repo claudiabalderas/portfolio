@@ -35,22 +35,52 @@
   
   .globo {
     position: absolute;
-    background-color: #f0f8ff;
+    background-color: #ADD8E6;
     padding: 0.8rem 1rem;
-    border-radius: 20px;
+    border-radius: 10px;
     max-width: 200px;
     font-size: 0.95rem;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     z-index: 2;
+    text-align: center;
   }
   
   /* Posiciones circulares */
-  .globo1 { top: 15%; left: 50%; transform: translate(-50%, -50%); }
-  .globo2 { top: 30%; left: 80%; transform: translate(-50%, -50%); }
-  .globo3 { top: 70%; left: 80%; transform: translate(-50%, -50%); }
-  .globo4 { top: 85%; left: 50%; transform: translate(-50%, -50%); }
-  .globo5 { top: 70%; left: 20%; transform: translate(-50%, -50%); }
-  .globo6 { top: 30%; left: 20%; transform: translate(-50%, -50%); }
+  #globo1 { top: 15%; left: 50%; transform: translate(-50%, -50%); }
+  #globo2 { top: 30%; left: 80%; transform: translate(-50%, -50%); }
+  #globo3 { top: 70%; left: 80%; transform: translate(-50%, -50%); }
+  #globo4 { top: 85%; left: 50%; transform: translate(-50%, -50%); }
+  #globo5 { top: 70%; left: 20%; transform: translate(-50%, -50%); }
+  #globo6 { top: 30%; left: 20%; transform: translate(-50%, -50%); }
   
   
   
+  @media screen and (max-width: 900px) {
+    .habilidades-circulares {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      position: relative;
+      gap: 1.2rem;
+      padding: 2rem 1rem;
+    }
+  
+    .imagen-central {
+      position: static;
+      transform: none;
+      margin-bottom: 1.5rem;
+      width: 80%;
+      max-width: 300px;
+      height: auto;
+    }
+  
+    .globo {
+      position: static !important;
+      transform: none !important;
+      max-width: 100%;
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }

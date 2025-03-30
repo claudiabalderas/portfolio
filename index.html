@@ -28,8 +28,9 @@
 
 
   <!-- Scripts -->
-  <script defer src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
-  <script defer src="js/app.js"></script>
+  <script defer src="js/modal.js"></script>
+
+
 
 </head>
 
@@ -56,20 +57,20 @@
     <section id="seccion_inicio">
       <!-- Fondo superior gris lavanda -->
       <div class="fondo"></div>
-  
+
       <div class="section info">
         <div class="contenedor-info">
-          
+
           <!-- Imagen tipo hero -->
           <div class="hero-img">
             <img src="images/claudia.jpg" alt="Foto de Claudia Balderas">
           </div>
-  
+
           <!-- Bloque de texto y redes -->
           <div class="bloque-texto">
             <h2>Claudia Balderas</h2>
             <h3>Investigadora en Metabolómica & Ciencia de Datos</h3>
-    
+
             <!-- Redes sociales -->
             <ul class="redes-sociales">
               <li>
@@ -89,7 +90,7 @@
               </li>
             </ul>
           </div>
-  
+
         </div>
       </div>
     </section>
@@ -244,12 +245,10 @@
 
     <section id="seccion_competencias">
       <h2>Competencias</h2>
-      <div class="competencias-grid-horizontal"
-        style="display: flex; justify-content: space-between; gap: 30px; flex-wrap: nowrap; margin-top: 40px;">
-
+      <div class="competencias-grid-horizontal">
         <!-- Metabolómica & Ciencias Ómicas -->
         <div class="bloque-competencia ">
-          <h3>🧪 Técnologías ómicas</h3>
+          <h3>Ómicas</h3>
           <div class="contenido-lateral">
             <div class="imagen-lateral">
               <img src="images/competencias/omicas.png" alt="Ómicas">
@@ -272,20 +271,20 @@
 
         <!-- Ciencia de Datos & Bioinformática -->
         <div class="bloque-competencia ">
-          <h3>💻 Digitales</h3>
+          <h3>Digitales</h3>
           <div class="contenido-lateral">
             <div class="imagen-lateral">
               <img src="images/competencias/digitales.png" alt="Ciencia de Datos">
             </div>
             <div class="lista-lateral">
               <ul class="icon-list">
-                <li>Lenguajes de programación: Python, R, SQL</li>
                 <li>Análisis multivariante: PCA, PLS-DA, OPLS-DA</li>
-                <li>Visualización: ggplot2, seaborn, matplotlib, plotly</li>
-                <li>Transformación de datos: pandas, dplyr, tidyr, NumPy</li>
                 <li>Análisis de datos ómicos con Bioconductor y MetaboAnalyst</li>
                 <li>Procesamiento bioinformático: FastQC, MultiQC</li>
-                <li>Reproducibilidad: Jupyter, RMarkdown, VSC, Git</li>
+                <li>Visualización: ggplot2, seaborn, matplotlib, plotly</li>
+                <li>Transformación de datos: pandas, dplyr, tidyr, NumPy</li>
+                <li>Lenguajes de programación: Python, R, SQL</li>
+                <li>Herramientas Desarrollo: Jupyter, RMarkdown, VSC, Git</li>
               </ul>
             </div>
           </div>
@@ -301,12 +300,12 @@
       <div class="habilidades-circulares">
         <img src="images/competencias/habilidades_cien.png" alt="Infografía científica" class="imagen-central">
 
-        <div class="globo globo1">Pensamiento crítico y resolución de problemas complejos</div>
-        <div class="globo globo2">Proactividad, iniciativa y capacidad de liderazgo</div>
-        <div class="globo globo3">Adaptabilidad a distintos entornos y contextos científicos</div>
-        <div class="globo globo4">Curiosidad intelectual y aprendizaje continuo de forma autónoma</div>
-        <div class="globo globo5">Habilidades de comunicación y redacción científica</div>
-        <div class="globo globo6">Gestión autónoma y eficiente de proyectos de investigación</div>
+        <div class="globo" id="globo1">Pensamiento crítico y resolución de problemas complejos</div>
+        <div class="globo" id="globo2">Proactividad, iniciativa y capacidad de liderazgo</div>
+        <div class="globo" id="globo3">Adaptabilidad a distintos entornos y contextos científicos</div>
+        <div class="globo" id="globo4">Curiosidad intelectual y aprendizaje continuo de forma autónoma</div>
+        <div class="globo" id="globo5">Habilidades de comunicación y redacción científica</div>
+        <div class="globo" id="globo6">Gestión autónoma y eficiente de proyectos de investigación</div>
       </div>
     </section>
 
@@ -318,91 +317,103 @@
 
       <div class="grid">
         <!-- Proyecto 1 -->
-        <article class="article">
-          <a href="#proyecto-aceites" title="Proyecto 1">
-            <figure class="figure">
-              <img src="images/momentum.png" alt="Imagen Proyecto 1" class="img" loading="lazy">
-            </figure>
-            <h4>Herramientas digitales basadas en inteligencia artificial para la detección de fraudes en aceites
-              esenciales.</h4>
+        <div class="proyecto">
+          <a>
+            <div class="imagen-contenedor">
+              <img src="images/momentum.png" alt="Imagen Momentun" class="img" loading="lazy">
+              <h4 class="titulo-proyecto" data-modal="modal1">Herramientas digitales basadas en inteligencia artificial
+                para la detección de
+                fraudes en aceites
+                esenciales.</h4>
+            </div>
           </a>
-        </article>
+        </div>
 
         <!-- Proyecto 2 -->
-        <article class="article">
-          <a href="#proyecto-nutricion" title="Proyecto 2">
-            <figure class="figure">
-              <img src="images/proyecto2.png" alt="Imagen Proyecto 2" class="img" loading="lazy">
-            </figure>
-            <h4>Análisis metabolómico en estudios de nutrición</h4>
-          </a>
-        </article>
-      </div>
-    </section>
-
-
-    <!-- Descripción Proyecto 1 -->
-    <section class="proyecto-detalle" id="proyecto-aceites">
-      <h3 style="display: flex; align-items: center; gap: 6px;">
-        <img src="images/iconos/emoji-aceite.png" alt="Aceite esencial" style="width: 200px; height: 200px;">
-        Herramientas digitales basadas en inteligencia artificial para la detección de fraudes en aceites esenciales.
-      </h3>
-
-      <p>
-        Este proyecto tiene como propósito evaluar el potencial de herramientas digitales basadas en algoritmos de
-        machine learning (ML) e inteligencia artificial (IA), aplicadas al análisis de datos experimentales generados
-        mediante distintas técnicas de análisis instrumental. Tiene como objetivo contribuir a la autentificación de
-        productos naturales con mayor precisión, rapidez y eficacia. Los resultados generados a lo largo del proyecto,
-        que tiene una duración de cuatro años, se irán actualizando y reflejando progresivamente en las siguientes
-        secciones.
-      </p>
-
-      <!-- Resultados del proyecto -->
-      <div class="resultados-proyecto">
-        <h4 style="text-align: center;">Resultados del proyecto</h4>
-        <div class="grid-resultados">
-          <div class="bloque-resultado">
-            <img src="images/resultados/formacion-digital.png" alt="Formación digital">
-            <p class="p-mini">Formación en competencias digitales</p>
-          </div>
-          <div class="bloque-resultado">
-            <img src="images/resultados/estancias.png" alt="Estancias formativas">
-            <p class="p-mini">Estancias formativas</p>
-          </div>
-          <div class="bloque-resultado">
-            <img src="images/resultados/formacion-extra.png" alt="Formación complementaria">
-            <p class="p-mini">Formación complementaria</p>
-          </div>
-          <div class="bloque-resultado">
-            <img src="images/resultados/publicaciones.png" alt="Publicaciones">
-            <p class="p-mini">Artículos científicos publicados</p>
+        <div class="proyecto">
+          <div class="imagen-contenedor">
+            <img src="images/proyecto2.png" alt="Imagen Proximo" class="img" loading="lazy">
+            <h4 class="titulo-proyecto" data-modal="modal2">Próximos Proyectos</h4>
           </div>
         </div>
       </div>
     </section>
 
 
-    <section class="proyecto-detalle" id="proyecto-proximo">
-      <h3>🚧 Próximamente</h3>
-      <p>
-        ¡Estoy cocinando algo interesante! En esta sección pronto compartiré un nuevo proyecto personal.
-      </p>
-    </section>
+    <!-- Modal 1 -->
+    <div class="modal" id="modal1">
+      <div class="modal-contenido">       
+        <section class="proyecto-detalle" id="proyecto-aceites"> 
+          <span class="cerrar">&times;</span>  
+          <div class="encabezado-proyecto">
+            <img id="image_aceite_esencial" src="images/iconos/emoji-aceite.png" alt="Aceite esencial">
+            <h3>
+              Herramientas digitales basadas en inteligencia artificial para la detección de fraudes en aceites esenciales.
+            </h3>
+          </div>
+    
+          <p>
+            Este proyecto tiene como propósito evaluar el potencial de herramientas digitales basadas en algoritmos de
+            machine learning (ML) e inteligencia artificial (IA), aplicadas al análisis de datos experimentales generados
+            mediante distintas técnicas de análisis instrumental. Tiene como objetivo contribuir a la autentificación de
+            productos naturales con mayor precisión, rapidez y eficacia. 
+          </p>
+          <p>
+            Los resultados generados a lo largo del proyecto,que tiene una duración de cuatro años, se irán actualizando y 
+            reflejando progresivamente en las siguientes secciones.
+          </p>
+    
+          <!-- Resultados del proyecto -->
+          <div class="resultados-proyecto">
+            <h4>Resultados del proyecto</h4>
+            <div class="grid-resultados">
+              <div class="bloque-resultado">
+                <img src="images/resultados/formacion-digital.png" alt="Formación digital">
+                <p class="p-mini">Formación en competencias digitales</p>
+              </div>
+              <div class="bloque-resultado">
+                <img src="images/resultados/estancias.png" alt="Estancias formativas">
+                <p class="p-mini">Estancias formativas</p>
+              </div>
+              <div class="bloque-resultado">
+                <img src="images/resultados/formacion-extra.png" alt="Formación complementaria">
+                <p class="p-mini">Formación complementaria</p>
+              </div>
+              <div class="bloque-resultado">
+                <img src="images/resultados/publicaciones.png" alt="Publicaciones">
+                <p class="p-mini">Artículos científicos publicados</p>
+              </div>
+            </div>
+          </div>
+          <div class="logos-institucionales">
+            <img src="images/logos/logo1.png" alt="Logo Institución 1" style="height: 40px; object-fit: contain;">
+            <img src="images/logos/logo2.png" alt="Logo Institución 2" style="height: 40px; object-fit: contain;">
+            <img src="images/logos/logo3.png" alt="Logo Institución 3" style="height: 40px; object-fit: contain;">
+            <img src="images/logos/logo4.png" alt="Logo Institución 4" style="height: 40px; object-fit: contain;">
+          </div>
+        </section>
+      </div>
+    </div>
 
+    <!-- Modal 2 -->
+    <div class="modal" id="modal2">
+      <div class="modal-contenido">        
+        <section class="proyecto-detalle" id="proyecto-proximo">
+          <span class="cerrar">&times;</span>
+          <h3>🚧 Próximamente</h3>
+          <p>
+            ¡Estoy cocinando algo interesante! En esta sección pronto compartiré un nuevo proyecto personal.
+          </p>
+        </section>
+      </div>
+    </div>
 
 
 
   </main>
 
-  <footer class="footer">
-    <!-- Logos institucionales -->
-    <div class="logos-institucionales">
-      <img src="images/logos/logo1.png" alt="Logo Institución 1" style="height: 40px; object-fit: contain;">
-      <img src="images/logos/logo2.png" alt="Logo Institución 2" style="height: 40px; object-fit: contain;">
-      <img src="images/logos/logo3.png" alt="Logo Institución 3" style="height: 40px; object-fit: contain;">
-      <img src="images/logos/logo4.png" alt="Logo Institución 4" style="height: 40px; object-fit: contain;">
-    </div>
-    <span class="span">Hecho por Claudia Balderas 👩🏻‍🔬 ⚛️ 👩🏻‍💻 </span>
+  <footer>
+    <span class="span">&copy;Hecho por Claudia Balderas 👩🏻‍🔬 ⚛️ 👩🏻‍💻 </span>
   </footer>
 
 </body>
