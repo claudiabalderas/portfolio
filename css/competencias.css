@@ -114,7 +114,7 @@
   }
   
   
-  .icon-list .li {
+  .icon-list li {
     position: relative;
     padding-left: 20px;
     margin-bottom: 10px;
@@ -124,7 +124,7 @@
     text-align: left;
   }
   
-  .icon-list .li::before {
+  .icon-list li::before {
     content: "";
     position: absolute;
     left: 0;
@@ -135,7 +135,7 @@
     border-radius: 50%;
   }
   
-  .bloque-competencia.animate .li {
+  .bloque-competencia.animate li {
     opacity: 1;
     transform: translateY(0);
   }

@@ -1,392 +1,417 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Claudia Balderas | Portafolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claudia Balderas | Portafolio</title>
 
-    <!-- Fuentes desde Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <!-- Fuentes desde Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
+    rel="stylesheet">
 
-    <!-- Hojas de estilo personalizadas -->
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/inicio.css">
-    <link rel="stylesheet" href="css/timeline.css">
-    <link rel="stylesheet" href="css/cv.css">
-    <link rel="stylesheet" href="css/competencias.css">
-    <link rel="stylesheet" href="css/habilidades.css">
-    <link rel="stylesheet" href="css/proyectos.css">
-    <link rel="stylesheet" href="css/footer.css">
+  <!-- Hojas de estilo personalizadas -->
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/inicio.css">
+  <link rel="stylesheet" href="css/timeline.css">
+  <link rel="stylesheet" href="css/cv.css">
+  <link rel="stylesheet" href="css/competencias.css">
+  <link rel="stylesheet" href="css/habilidades.css">
+  <link rel="stylesheet" href="css/proyectos.css">
+  <link rel="stylesheet" href="css/footer.css">
 
 
 
-    <!-- Scripts -->
-    <script defer src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
-    <script defer src="js/app.js"></script>
+  <!-- Scripts -->
+  <script defer src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+  <script defer src="js/app.js"></script>
 
 </head>
+
+
+
 <body>
 
- 
 
-    <!-- Encabezado con menú de navegación sticky -->
-    <header class="header">
-        <h1 class="h1">
-            <a href="#inicio" title="Claudia Balderas" class="a">Claudia Balderas</a>
-        </h1>
 
-        <nav class="nav">
-            <ul class="ul">
-                <li class="li"><a href="#inicio" class="a">Inicio</a></li>
-                <li class="li"><a href="#sobre-mi" class="a">Sobre mí</a></li>
-                <li class="li"><a href="#formacion" class="a">Trayectoria</a></li>
-                <li class="li"><a href="#competencias" class="a">Competencias</a></li>
-                <li class="li"><a href="#habilidades" class="a">Habilidades</a></li>
-                <li class="li"><a href="#proyectos" class="a">Proyectos</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Encabezado con menú de navegación sticky -->
+  <header>
+    <h1>      
+      <img src="images/iconos/matraz.png" alt="Inicio">
+    </h1>
 
-    <!-- Contenido principal (secciones) -->
-    <main>
-        <!-- Aquí van tus secciones como #inicio, #sobre-mi, etc. -->
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#formacion">Trayectoria</a></li>
+        <li><a href="#competencias">Competencias</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main class="main">
-        <div class="seccion" id="inicio" style="background-color: #f5f5f5; position: relative;">
-            <!-- Fondo superior gris lavanda a pantalla completa -->
-            <div style="background-color: #e3e3ea; height: 500px; width: 100%; position: absolute; top: 0; left: 0; z-index: 0;"></div>
-          
-            <section class="section info" style="padding: 100px 40px; position: relative; z-index: 1;">
-              <div style="display: flex; align-items: center; justify-content: center; gap: 60px; flex-wrap: wrap; max-width: 1100px; margin: 0 auto;">
-                
-                <!-- Imagen tipo hero -->
-                <div>
-                  <img src="images/claudia.jpg" alt="Foto de Claudia Balderas"
-                    style="width: 220px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
-                </div>
-          
-                <!-- Bloque de texto y redes -->
-                <div style="max-width: 500px;">
-                  <h2 class="h2" style="font-size: 2.2rem; font-weight: 700; margin: 0;">Claudia Balderas</h2>
-                  <h3 class="h3" style="font-size: 1.3rem; font-weight: 400; color: #333; margin-top: 10px;">
-                    Investigadora en Metabolómica & Ciencia de Datos
-                  </h3>
-                  <p style="margin-top: 12px; color: #555; font-size: 1rem;">
-                    Mis proyectos están a solo un scroll de distancia.
-                  </p>
-          
-                  <!-- Redes sociales alineadas a la izquierda -->
-                  <ul class="ul" style="list-style: none; padding: 0; margin-top: 25px;">
-                    <li class="li" style="display: inline-block; margin-right: 15px;">
-                      <a href="https://github.com/claudiabalderas" target="_blank">
-                        <img src="images/github.png" alt="GitHub" style="width: 40px;">
-                      </a>
-                    </li>
-                    <li class="li" style="display: inline-block; margin-right: 15px;">
-                      <a href="https://www.linkedin.com/in/phdclaudiabalderas/" target="_blank">
-                        <img src="images/linkedin.jpg" alt="LinkedIn" style="width: 40px; border-radius: 6px;">
-                      </a>
-                    </li>
-                    <li class="li" style="display: inline-block;">
-                      <a href="https://orcid.org/0000-0002-8524-0219" target="_blank">
-                        <img src="images/orcid.png" alt="Orcid" style="width: 40px;">
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </section>
+  <!-- Contenido principal (secciones) -->
+  <main>
+
+    <section id="inicio" style="background-color: #f5f5f5; position: relative;">
+      <!-- Fondo superior gris lavanda a pantalla completa -->
+      <div
+        style="background-color: #e3e3ea; height: 500px; width: 100%; position: absolute; top: 0; left: 0; z-index: 0;">
+      </div>
+
+      <div class="section info" style="padding: 100px 40px; position: relative; z-index: 1;">
+        <div
+          style="display: flex; align-items: center; justify-content: center; gap: 60px; flex-wrap: wrap; max-width: 1100px; margin: 0 auto;">
+
+          <!-- Imagen tipo hero -->
+          <div>
+            <img src="images/claudia.jpg" alt="Foto de Claudia Balderas"
+              style="width: 220px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
           </div>
 
-        <section class="seccion about" id="about">
-            <h2 class="h2">Sobre mí</h2>
-            <p class="p">
-                Con más de una década de experiencia en investigación, me he especializado en metabolómica orientada a estudios de nutrición, enfocándome especialmente en el análisis de datos complejos provenientes de espectrometría de masas.
-            </p>
-            <p class="p">
-                Durante mi carrera, he expandido mi perfil al incorporar habilidades en ciencia de datos aplicadas a otras tecnologías ómicas (genómica, transcriptómica y proteómica) mediante un máster en bioinformática especializado.
-            </p>
-            <p class="p">
-                Actualmente formo parte del programa Momentum del CSIC, con un contrato Doctor FC2 en el Instituto de Química Orgánica General (IQOG-CSIC), donde colaboro en el desarrollo de un proyecto innovador que aplica algoritmos de Machine Learning y herramientas de Inteligencia Artificial para la detección de fraudes en aceites esenciales.
-            </p>
-            <p class="p">
-               Me motiva llevar la ciencia a contextos reales, aplicando el conocimiento a problemas concretos que generan un impacto. Disfruto especialmente de los desafíos interdisciplinarios y del trabajo en equipo. A lo largo de mi carrera he tenido la oportunidad de trabajar en distintos países y entornos culturales, lo que ha fortalecido mi capacidad de adaptación y mi habilidad para integrarme y colaborar con equipos diversos. Quienes han trabajado conmigo me describen como una persona cercana, perseverante y resolutiva.
-            <p class="p">
-                ¿Quieres saber más sobre mi trabajo? Escríbeme:
+          <!-- Bloque de texto y redes -->
+          <div style="max-width: 500px;">
+            <h2 style="font-size: 2.2rem; font-weight: 700; margin: 0;">Claudia Balderas</h2>
+            <h3 style="font-size: 1.3rem; font-weight: 400; color: #333; margin-top: 10px;">
+              Investigadora en Metabolómica & Ciencia de Datos
+            </h3>
+            <p style="margin-top: 12px; color: #555; font-size: 1rem;">
+              Mis proyectos están a solo un scroll de distancia.
             </p>
 
-            <ul class="rrss">
-                 <!-- Email -->
-                 <li class="li" style="display: inline-block; margin: 0 10px;">
-                    <a href="mailto:claudia.balderas@iqog.csic.es" class="a" title="Envíame un correo">
-                        <img src="images/email.png" alt="Email" class="svg" style="width: 100px; vertical-align: middle;">
-                    </a>
-                </li>
-            </ul>
-        </section>
-
-
-        <section class="seccion formacion" id="formacion">
-            <h2 class="h2">Trayectoria</h2>
-          
-            <!-- Línea de tiempo: EXPERIENCIA LABORAL -->
-            <h3 class="h3">Experiencia laboral</h3>
-            <div class="timeline-alt">
-          
-              <div class="timeline-container left ">
-                <div class="timeline-content-alt">
-                  <img src="images/logos/iqog.png" alt="Logo IQOG-CSIC" class="logo-uni">
-                  <h4 class="h4">Doctor FC2 - Programa Momentum (IQOG-CSIC)</h4>
-                  <span class="timeline-date">Actualmente</span>
-                  <p class="p">Instituto de Química Orgánica General, Madrid</p>
-                </div>
-              </div>
-          
-              <div class="timeline-container right ">
-                <div class="timeline-content-alt">
-                  <img src="images/logos/ictan.png" alt="Logo ICTAN-CSIC" class="logo-uni">
-                  <h4 class="h4">ICTAN-CSIC</h4>
-                  <span class="timeline-date">2017 - 2020 | 2022 - 2024</span>
-                  <p class="p"><strong>Periodo I</strong> Titulado Superior - Proyecto determinado en el area de metabolómica</p>
-                  <p class="p"><strong>Periodo II</strong> Analista de datos en la Unidad de Servicio de Técnicas Analíticas (USTA)</p>
-                  <p class="p">Instituto de Ciencia y Tecnología de Alimentos y Nutrición, Madrid</p>
-                </div>
-              </div>
-          
-              <div class="timeline-container left ">
-                <div class="timeline-content-alt">
-                  <img src="images/logos/lund.png" alt="Logo Universidad de Lund" class="logo-uni">
-                  <h4 class="h4">Investigadora Postdoctoral</h4>
-                  <span class="timeline-date">2015 - 2017</span>
-                  <p class="p">Universidad de Lund, Suecia</p>
-                </div>
-              </div>
-          
-              <div class="timeline-container right ">
-                <div class="timeline-content-alt">
-                  <img src="images/logos/ufsc.png" alt="Logo UFSC" class="logo-uni">
-                  <h4 class="h4">Investigadora Postdoctoral</h4>
-                  <span class="timeline-date">2014 - 2015</span>
-                  <p class="p">Universidad Federal de Santa Catarina, Brasil</p>
-                </div>
-              </div>
-            </div> <!-- Fin de experiencia laboral -->
-          
-            <!-- Línea de tiempo: FORMACIÓN ACADÉMICA -->
-            <h3 class="h3" style="margin-top: 4rem;">Formación académica</h3>
-            <div class="timeline-alt">
-          
-              <div class="timeline-container left ">
-                <div class="timeline-content-alt">
-                  <img src="images/logos/viu.png" alt="Logo VIU" class="logo-uni">
-                  <h4 class="h4">M.Sc. en Bioinformática</h4>
-                  <span class="timeline-date">2023 - 2024</span>
-                  <p class="p">Universitat Internacional Valenciana (VIU)</p>
-                </div>
-              </div>
-          
-              <div class="timeline-container right ">
-                <div class="timeline-content-alt">
-                  <img src="images/logos/the-bridge.png" alt="Logo The Bridge" class="logo-uni">
-                  <h4 class="h4">Bootcamp en Data Science</h4>
-                  <span class="timeline-date"> Abril 2022 - Agosto 2022</span>
-                  <p class="p">The Bridge | Digital Talent Accelerator</p>
-                </div>
-              </div>
-          
-              <div class="timeline-container left ">
-                <div class="timeline-content-alt">
-                  <img src="images/logos/cembio.png" alt="Logo CEU" class="logo-uni">
-                  <h4 class="h4">Doctorado en Biología y Patología Perinatales</h4>
-                  <h4 class="h4">DEA en Estadística e Investigación Operativa</h4>
-                  <span class="timeline-date">2009 - 2014</span>
-                  <p class="p">Universidad San Pablo CEU - Centro de Metabolómica y Bioanálisis (CEMBIO)</p>
-                </div>
-              </div>
-              <div class="timeline-container right ">
-                <div class="timeline-content-alt">
-                  <img src="images/logos/unam.png" alt="Logo UNAM" class="logo-uni">
-                  <h4 class="h4">Licenciatura Química Farmacéutica Bióloga</h4>
-                  <span class="timeline-date">2004 - 2009</span>
-                  <p class="p">Universidad Nacional Autónoma de México</p>
-                </div>
-              </div>
-            </div> <!-- Fin de formación académica -->
-          </section>
-
-    <!-- Flecha decorativa al final de la línea -->
-    <div class="timeline-arrow"></div>
-
-    <!-- Frase final y enlace al CV -->
-    <div class="cv-section">
-        <p class="p cv-text">¿Quieres saber más? Descarga mi CV</p>
-        <a href="docs/curriculum.pdf" download title="Descargar CV">
-            <img src="images/cv_icon.png" alt="Descargar CV" class="cv-icon">
-          </a>
-    </div>
-
-
-    <section class="seccion competencias" id="competencias">
-        <h2 class="h2">Competencias</h2>
-        <div class="competencias-grid-horizontal" style="display: flex; justify-content: space-between; gap: 30px; flex-wrap: nowrap; margin-top: 40px;">
-      
-          <!-- Metabolómica & Ciencias Ómicas -->
-          <div class="bloque-competencia ">
-            <h3 class="h3">🧪 Técnologías ómicas</h3>
-            <div class="contenido-lateral">
-              <div class="imagen-lateral">
-                <img src="images/competencias/omicas.png" alt="Ómicas">
-              </div>
-              <div class="lista-lateral">
-                <ul class="ul icon-list">
-                  <li class="li">Diseño y ejecución de estudios metabolómicos y lipidómicos aplicados a nutrición y salud</li>
-                  <li class="li">Experiencia en plataformas analíticas: LC-MS, CE-MS</li>
-                  <li class="li">Procesamiento y alineamiento de datos con MzMine, MassHunter, SIMCA P+</li>
-                  <li class="li">Análisis estadístico e interpretación de datos</li>
-                  <li class="li">Enriquecimiento de vías metabólicas con MetaboAnalyst</li>
-                  <li class="li">Control de calidad, normalización y preprocesamiento de datos ómicos</li>
-                  <li class="li">FastQC, MultiQC – Control de calidad en lecturas de secuenciación</li>
-                  <li class="li">HTSeq, featureCounts – Cuantificación en RNA-Seq</li>
-                  <li class="li">DESeq2, edgeR, limma – Análisis de expresión diferencial</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-      
-          <!-- Ciencia de Datos & Bioinformática -->
-          <div class="bloque-competencia ">
-            <h3 class="h3">💻 Digitales</h3>
-            <div class="contenido-lateral">
-              <div class="imagen-lateral">
-                <img src="images/competencias/digitales.png" alt="Ciencia de Datos">
-              </div>
-              <div class="lista-lateral">
-                <ul class="ul icon-list">
-                  <li class="li">Lenguajes de programación: Python, R, SQL</li>
-                  <li class="li">Análisis multivariante: PCA, PLS-DA, OPLS-DA</li>
-                  <li class="li">Visualización: ggplot2, seaborn, matplotlib, plotly</li>
-                  <li class="li">Transformación de datos: pandas, dplyr, tidyr, NumPy</li>
-                  <li class="li">Análisis de datos ómicos con Bioconductor y MetaboAnalyst</li>
-                  <li class="li">Procesamiento bioinformático: FastQC, MultiQC</li>
-                  <li class="li">Reproducibilidad: Jupyter, RMarkdown, VSC, Git</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-      
-        </div>
-      </section>
-
-      </section>
-      <section class="seccion habilidades" id="habilidades">
-        <h2 class="h2">Habilidades</h2>
-        <h3 class="h3">Personales y Profesionales</h3>
-        <div class="habilidades-circulares">
-          <img src="images/competencias/habilidades_cien.png" alt="Infografía científica" class="imagen-central">
-      
-          <div class="globo globo1">Pensamiento crítico y resolución de problemas complejos</div>
-          <div class="globo globo2">Proactividad, iniciativa y capacidad de liderazgo</div>
-          <div class="globo globo3">Adaptabilidad a distintos entornos y contextos científicos</div>
-          <div class="globo globo4">Curiosidad intelectual y aprendizaje continuo de forma autónoma</div>
-          <div class="globo globo5">Habilidades de comunicación y redacción científica</div>
-          <div class="globo globo6">Gestión autónoma y eficiente de proyectos de investigación</div>
-        </div>
-      </section>
-
-    <section class="seccion works" id="works">
-        <h2 class="h2">Proyectos</h2>
-        <p class="p">Proyectos actuales donde aplico enfoques de ciencia de datos y metabolómica con algoritmos de aprendizaje automático.</p>
-    
-        <div class="grid">
-            <!-- Proyecto 1 -->
-            <article class="article">
-                <a class="a" href="#proyecto-aceites" title="Proyecto 1">
-                    <figure class="figure">
-                        <img src="images/momentum.png" alt="Imagen Proyecto 1" class="img" loading="lazy">
-                    </figure>
-                    <h4 class="h4">Herramientas digitales basadas en inteligencia artificial para la detección de fraudes en aceites esenciales.</h4>
+            <!-- Redes sociales alineadas a la izquierda -->
+            <ul style="list-style: none; padding: 0; margin-top: 25px;">
+              <li style="display: inline-block; margin-right: 15px;">
+                <a href="https://github.com/claudiabalderas" target="_blank">
+                  <img src="images/github.png" alt="GitHub" style="width: 40px;">
                 </a>
-            </article>
-    
-            <!-- Proyecto 2 -->
-            <article class="article">
-                <a class="a" href="#proyecto-nutricion" title="Proyecto 2">
-                    <figure class="figure">
-                        <img src="images/proyecto2.png" alt="Imagen Proyecto 2" class="img" loading="lazy">
-                    </figure>
-                    <h4 class="h4">Análisis metabolómico en estudios de nutrición</h4>
+              </li>
+              <li style="display: inline-block; margin-right: 15px;">
+                <a href="https://www.linkedin.com/in/phdclaudiabalderas/" target="_blank">
+                  <img src="images/linkedin.jpg" alt="LinkedIn" style="width: 40px; border-radius: 6px;">
                 </a>
-            </article>
+              </li>
+              <li style="display: inline-block;">
+                <a href="https://orcid.org/0000-0002-8524-0219" target="_blank">
+                  <img src="images/orcid.png" alt="Orcid" style="width: 40px;">
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
 
-<!-- Descripción Proyecto 1 -->
-<section class="seccion proyecto-detalle" id="proyecto-aceites">
-    <h3 class="h3" style="display: flex; align-items: center; gap: 6px;">
+
+    <section id="seccion_sobremi">
+      <h2>Sobre mí</h2>
+      <p>
+        Con más de una década de experiencia en investigación, me he especializado en metabolómica orientada a estudios
+        de nutrición, enfocándome especialmente en el análisis de datos complejos provenientes de espectrometría de
+        masas.
+      </p>
+      <p>
+        Durante mi carrera, he expandido mi perfil al incorporar habilidades en ciencia de datos aplicadas a otras
+        tecnologías ómicas (genómica, transcriptómica y proteómica) mediante un máster en bioinformática especializado.
+      </p>
+      <p>
+        Actualmente formo parte del programa Momentum del CSIC, con un contrato Doctor FC2 en el Instituto de Química
+        Orgánica General (IQOG-CSIC), donde colaboro en el desarrollo de un proyecto innovador que aplica algoritmos de
+        Machine Learning y herramientas de Inteligencia Artificial para la detección de fraudes en aceites esenciales.
+      </p>
+      <p>
+        Me motiva llevar la ciencia a contextos reales, aplicando el conocimiento a problemas concretos que generan un
+        impacto. Disfruto especialmente de los desafíos interdisciplinarios y del trabajo en equipo. A lo largo de mi
+        carrera he tenido la oportunidad de trabajar en distintos países y entornos culturales, lo que ha fortalecido mi
+        capacidad de adaptación y mi habilidad para integrarme y colaborar con equipos diversos. Quienes han trabajado
+        conmigo me describen como una persona cercana, perseverante y resolutiva.
+      <p>
+        ¿Quieres saber más sobre mi trabajo? Escríbeme:
+      </p>
+
+      <ul class="rrss">
+        <!-- Email -->
+        <li style="display: inline-block; margin: 0 10px;">
+          <a href="mailto:claudia.balderas@iqog.csic.es" title="Envíame un correo">
+            <img src="images/email.png" alt="Email" class="svg" style="width: 100px; vertical-align: middle;">
+          </a>
+        </li>
+      </ul>
+    </section>
+
+
+    <section id="seccion_trayectoria">
+      <h2>Trayectoria</h2>
+
+      <!-- Línea de tiempo: EXPERIENCIA LABORAL -->
+      <h3>Experiencia laboral</h3>
+      <div class="timeline-alt">
+
+        <div class="timeline-container left ">
+          <div class="timeline-content-alt">
+            <img src="images/logos/iqog.png" alt="Logo IQOG-CSIC" class="logo-uni">
+            <h4>Doctor FC2 - Programa Momentum (IQOG-CSIC)</h4>
+            <span class="timeline-date">Actualmente</span>
+            <p>Instituto de Química Orgánica General, Madrid</p>
+          </div>
+        </div>
+
+        <div class="timeline-container right ">
+          <div class="timeline-content-alt">
+            <img src="images/logos/ictan.png" alt="Logo ICTAN-CSIC" class="logo-uni">
+            <h4>ICTAN-CSIC</h4>
+            <span class="timeline-date">2017 - 2020 | 2022 - 2024</span>
+            <p><span class="negrita">Periodo I</span> Titulado Superior - Proyecto determinado en el area de
+              metabolómica</p>
+            <p><span class="negrita">Periodo II</span> Analista de datos en la Unidad de Servicio de Técnicas Analíticas
+              (USTA)</p>
+            <p>Instituto de Ciencia y Tecnología de Alimentos y Nutrición, Madrid</p>
+          </div>
+        </div>
+
+        <div class="timeline-container left ">
+          <div class="timeline-content-alt">
+            <img src="images/logos/lund.png" alt="Logo Universidad de Lund" class="logo-uni">
+            <h4>Investigadora Postdoctoral</h4>
+            <span class="timeline-date">2015 - 2017</span>
+            <p>Universidad de Lund, Suecia</p>
+          </div>
+        </div>
+
+        <div class="timeline-container right ">
+          <div class="timeline-content-alt">
+            <img src="images/logos/ufsc.png" alt="Logo UFSC" class="logo-uni">
+            <h4>Investigadora Postdoctoral</h4>
+            <span class="timeline-date">2014 - 2015</span>
+            <p>Universidad Federal de Santa Catarina, Brasil</p>
+          </div>
+        </div>
+      </div> <!-- Fin de experiencia laboral -->
+
+      <!-- Línea de tiempo: FORMACIÓN ACADÉMICA -->
+      <h3 style="margin-top: 4rem;">Formación académica</h3>
+      <div class="timeline-alt">
+
+        <div class="timeline-container left ">
+          <div class="timeline-content-alt">
+            <img src="images/logos/viu.png" alt="Logo VIU" class="logo-uni">
+            <h4>M.Sc. en Bioinformática</h4>
+            <span class="timeline-date">2023 - 2024</span>
+            <p>Universitat Internacional Valenciana (VIU)</p>
+          </div>
+        </div>
+
+        <div class="timeline-container right ">
+          <div class="timeline-content-alt">
+            <img src="images/logos/the-bridge.png" alt="Logo The Bridge" class="logo-uni">
+            <h4>Bootcamp en Data Science</h4>
+            <span class="timeline-date"> Abril 2022 - Agosto 2022</span>
+            <p>The Bridge | Digital Talent Accelerator</p>
+          </div>
+        </div>
+
+        <div class="timeline-container left ">
+          <div class="timeline-content-alt">
+            <img src="images/logos/cembio.png" alt="Logo CEU" class="logo-uni">
+            <h4>Doctorado en Biología y Patología Perinatales</h4>
+            <h4>DEA en Estadística e Investigación Operativa</h4>
+            <span class="timeline-date">2009 - 2014</span>
+            <p>Universidad San Pablo CEU - Centro de Metabolómica y Bioanálisis (CEMBIO)</p>
+          </div>
+        </div>
+        <div class="timeline-container right ">
+          <div class="timeline-content-alt">
+            <img src="images/logos/unam.png" alt="Logo UNAM" class="logo-uni">
+            <h4>Licenciatura Química Farmacéutica Bióloga</h4>
+            <span class="timeline-date">2004 - 2009</span>
+            <p>Universidad Nacional Autónoma de México</p>
+          </div>
+        </div>
+      </div> <!-- Fin de formación académica -->
+
+      <!-- Flecha decorativa al final de la línea -->
+      <div class="timeline-arrow"></div>
+
+      <!-- Frase final y enlace al CV -->
+      <div class="cv-section">
+        <p class="cv-text">¿Quieres saber más? Descarga mi CV</p>
+        <a href="docs/curriculum.pdf" download title="Descargar CV">
+          <img src="images/cv_icon.png" alt="Descargar CV" class="cv-icon">
+        </a>
+      </div>
+
+    </section>
+
+
+    <section id="seccion_competencias">
+      <h2>Competencias</h2>
+      <div class="competencias-grid-horizontal"
+        style="display: flex; justify-content: space-between; gap: 30px; flex-wrap: nowrap; margin-top: 40px;">
+
+        <!-- Metabolómica & Ciencias Ómicas -->
+        <div class="bloque-competencia ">
+          <h3>🧪 Técnologías ómicas</h3>
+          <div class="contenido-lateral">
+            <div class="imagen-lateral">
+              <img src="images/competencias/omicas.png" alt="Ómicas">
+            </div>
+            <div class="lista-lateral">
+              <ul class="icon-list">
+                <li>Diseño y ejecución de estudios metabolómicos y lipidómicos aplicados a nutrición y salud</li>
+                <li>Experiencia en plataformas analíticas: LC-MS, CE-MS</li>
+                <li>Procesamiento y alineamiento de datos con MzMine, MassHunter, SIMCA P+</li>
+                <li>Análisis estadístico e interpretación de datos</li>
+                <li>Enriquecimiento de vías metabólicas con MetaboAnalyst</li>
+                <li>Control de calidad, normalización y preprocesamiento de datos ómicos</li>
+                <li>FastQC, MultiQC Control de calidad en lecturas de secuenciación</li>
+                <li>HTSeq, featureCounts Cuantificación en RNA-Seq</li>
+                <li>DESeq2, edgeR, limma Análisis de expresión diferencial</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ciencia de Datos & Bioinformática -->
+        <div class="bloque-competencia ">
+          <h3>💻 Digitales</h3>
+          <div class="contenido-lateral">
+            <div class="imagen-lateral">
+              <img src="images/competencias/digitales.png" alt="Ciencia de Datos">
+            </div>
+            <div class="lista-lateral">
+              <ul class="icon-list">
+                <li>Lenguajes de programación: Python, R, SQL</li>
+                <li>Análisis multivariante: PCA, PLS-DA, OPLS-DA</li>
+                <li>Visualización: ggplot2, seaborn, matplotlib, plotly</li>
+                <li>Transformación de datos: pandas, dplyr, tidyr, NumPy</li>
+                <li>Análisis de datos ómicos con Bioconductor y MetaboAnalyst</li>
+                <li>Procesamiento bioinformático: FastQC, MultiQC</li>
+                <li>Reproducibilidad: Jupyter, RMarkdown, VSC, Git</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section id="seccion_habilidades">
+      <h2>Habilidades</h2>
+      <h3>Personales y Profesionales</h3>
+      <div class="habilidades-circulares">
+        <img src="images/competencias/habilidades_cien.png" alt="Infografía científica" class="imagen-central">
+
+        <div class="globo globo1">Pensamiento crítico y resolución de problemas complejos</div>
+        <div class="globo globo2">Proactividad, iniciativa y capacidad de liderazgo</div>
+        <div class="globo globo3">Adaptabilidad a distintos entornos y contextos científicos</div>
+        <div class="globo globo4">Curiosidad intelectual y aprendizaje continuo de forma autónoma</div>
+        <div class="globo globo5">Habilidades de comunicación y redacción científica</div>
+        <div class="globo globo6">Gestión autónoma y eficiente de proyectos de investigación</div>
+      </div>
+    </section>
+
+
+    <section id="seccion_proyectos">
+      <h2>Proyectos</h2>
+      <p>Proyectos actuales donde aplico enfoques de ciencia de datos y metabolómica con algoritmos de aprendizaje
+        automático.</p>
+
+      <div class="grid">
+        <!-- Proyecto 1 -->
+        <article class="article">
+          <a href="#proyecto-aceites" title="Proyecto 1">
+            <figure class="figure">
+              <img src="images/momentum.png" alt="Imagen Proyecto 1" class="img" loading="lazy">
+            </figure>
+            <h4>Herramientas digitales basadas en inteligencia artificial para la detección de fraudes en aceites
+              esenciales.</h4>
+          </a>
+        </article>
+
+        <!-- Proyecto 2 -->
+        <article class="article">
+          <a href="#proyecto-nutricion" title="Proyecto 2">
+            <figure class="figure">
+              <img src="images/proyecto2.png" alt="Imagen Proyecto 2" class="img" loading="lazy">
+            </figure>
+            <h4>Análisis metabolómico en estudios de nutrición</h4>
+          </a>
+        </article>
+      </div>
+    </section>
+
+
+    <!-- Descripción Proyecto 1 -->
+    <section class="proyecto-detalle" id="proyecto-aceites">
+      <h3 style="display: flex; align-items: center; gap: 6px;">
         <img src="images/iconos/emoji-aceite.png" alt="Aceite esencial" style="width: 200px; height: 200px;">
         Herramientas digitales basadas en inteligencia artificial para la detección de fraudes en aceites esenciales.
       </h3>
-  
-    <p class="p">
-        Este proyecto tiene como propósito evaluar el potencial de herramientas digitales basadas en algoritmos de machine learning (ML) e inteligencia artificial (IA), aplicadas al análisis de datos experimentales generados mediante distintas técnicas de análisis instrumental. Tiene como objetivo contribuir a la autentificación de productos naturales con mayor precisión, rapidez y eficacia. Los resultados generados a lo largo del proyecto, que tiene una duración de cuatro años, se irán actualizando y reflejando progresivamente en las siguientes secciones.
-    </p>
-  
-    <!-- Resultados del proyecto -->
-    <div class="resultados-proyecto">
-      <h4 class="h4" style="text-align: center;">Resultados del proyecto</h4>
-      <div class="grid-resultados">
-        <div class="bloque-resultado">
-          <img src="images/resultados/formacion-digital.png" alt="Formación digital">
-          <p class="p-mini">Formación en competencias digitales</p>
-        </div>
-        <div class="bloque-resultado">
-          <img src="images/resultados/estancias.png" alt="Estancias formativas">
-          <p class="p-mini">Estancias formativas</p>
-        </div>
-        <div class="bloque-resultado">
-          <img src="images/resultados/formacion-extra.png" alt="Formación complementaria">
-          <p class="p-mini">Formación complementaria</p>
-        </div>
-        <div class="bloque-resultado">
-          <img src="images/resultados/publicaciones.png" alt="Publicaciones">
-          <p class="p-mini">Artículos científicos publicados</p>
+
+      <p>
+        Este proyecto tiene como propósito evaluar el potencial de herramientas digitales basadas en algoritmos de
+        machine learning (ML) e inteligencia artificial (IA), aplicadas al análisis de datos experimentales generados
+        mediante distintas técnicas de análisis instrumental. Tiene como objetivo contribuir a la autentificación de
+        productos naturales con mayor precisión, rapidez y eficacia. Los resultados generados a lo largo del proyecto,
+        que tiene una duración de cuatro años, se irán actualizando y reflejando progresivamente en las siguientes
+        secciones.
+      </p>
+
+      <!-- Resultados del proyecto -->
+      <div class="resultados-proyecto">
+        <h4 style="text-align: center;">Resultados del proyecto</h4>
+        <div class="grid-resultados">
+          <div class="bloque-resultado">
+            <img src="images/resultados/formacion-digital.png" alt="Formación digital">
+            <p class="p-mini">Formación en competencias digitales</p>
+          </div>
+          <div class="bloque-resultado">
+            <img src="images/resultados/estancias.png" alt="Estancias formativas">
+            <p class="p-mini">Estancias formativas</p>
+          </div>
+          <div class="bloque-resultado">
+            <img src="images/resultados/formacion-extra.png" alt="Formación complementaria">
+            <p class="p-mini">Formación complementaria</p>
+          </div>
+          <div class="bloque-resultado">
+            <img src="images/resultados/publicaciones.png" alt="Publicaciones">
+            <p class="p-mini">Artículos científicos publicados</p>
+          </div>
         </div>
       </div>
+    </section>
+
+
+    <section class="proyecto-detalle" id="proyecto-proximo">
+      <h3>🚧 Próximamente</h3>
+      <p>
+        ¡Estoy cocinando algo interesante! En esta sección pronto compartiré un nuevo proyecto personal.
+      </p>
+    </section>
+
+
+
+
+  </main>
+
+  <footer class="footer">
+    <!-- Logos institucionales -->
+    <div class="logos-institucionales">
+      <img src="images/logos/logo1.png" alt="Logo Institución 1" style="height: 40px; object-fit: contain;">
+      <img src="images/logos/logo2.png" alt="Logo Institución 2" style="height: 40px; object-fit: contain;">
+      <img src="images/logos/logo3.png" alt="Logo Institución 3" style="height: 40px; object-fit: contain;">
+      <img src="images/logos/logo4.png" alt="Logo Institución 4" style="height: 40px; object-fit: contain;">
     </div>
-  </section>
-
-      <section class="seccion proyecto-detalle" id="proyecto-nutricion">
-        <h3 class="h3">🚧 Próximamente</h3>
-        <p class="p">
-          ¡Estoy cocinando algo interesante! En esta sección pronto compartiré un nuevo proyecto personal.
-        </p>
-      </section>
-<!-- Logos institucionales -->
-<div class="logos-institucionales" style="
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  margin: 40px auto 0;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  max-width: 100%;
-  padding: 10px 0;
-">
-  <img src="images/logos/logo1.png" alt="Logo Institución 1" style="height: 40px; object-fit: contain;">
-  <img src="images/logos/logo2.png" alt="Logo Institución 2" style="height: 40px; object-fit: contain;">
-  <img src="images/logos/logo3.png" alt="Logo Institución 3" style="height: 40px; object-fit: contain;">
-  <img src="images/logos/logo4.png" alt="Logo Institución 4" style="height: 40px; object-fit: contain;">
-</div>
-</section>
-    </main>
-
-    <footer class="footer">
-        <span class="span">Hecho por Claudia Balderas 👩🏻‍🔬 ⚛️ 👩🏻‍💻 </span>
-    </footer>
+    <span class="span">Hecho por Claudia Balderas 👩🏻‍🔬 ⚛️ 👩🏻‍💻 </span>
+  </footer>
 
 </body>
+
 </html>

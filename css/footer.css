@@ -3,9 +3,21 @@
 /* =======================================================
    🦶 FOOTER
 ======================================================= */
-.footer {
+footer {
     padding: 2em 0;
     text-align: center;
     color: var(--blanco);
     z-index: 2;
   }
+
+.logos-institucionales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 40px auto 0;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  max-width: 100%;
+  padding: 10px 0;
+}
